@@ -47,7 +47,7 @@
 #endif
 
 #ifndef MAV_SYSTEM_ID
- # define MAV_SYSTEM_ID          1
+# define MAV_SYSTEM_ID          1
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
@@ -64,9 +64,9 @@
 
 #ifndef OPTFLOW
 #if AP_AHRS_NAVEKF_AVAILABLE
- # define OPTFLOW ENABLED
+# define OPTFLOW ENABLED
 #else
- # define OPTFLOW DISABLED
+# define OPTFLOW DISABLED
 #endif
 #endif
 
@@ -84,73 +84,73 @@
 // Note that these are not called out in APM_Config.h.reference.
 //
 #ifndef CH5_MIN
- # define CH5_MIN        1000
+# define CH5_MIN        1000
 #endif
 #ifndef CH5_MAX
- # define CH5_MAX        2000
+# define CH5_MAX        2000
 #endif
 #ifndef CH6_MIN
- # define CH6_MIN        1000
+# define CH6_MIN        1000
 #endif
 #ifndef CH6_MAX
- # define CH6_MAX        2000
+# define CH6_MAX        2000
 #endif
 #ifndef CH7_MIN
- # define CH7_MIN        1000
+# define CH7_MIN        1000
 #endif
 #ifndef CH7_MAX
- # define CH7_MAX        2000
+# define CH7_MAX        2000
 #endif
 #ifndef CH8_MIN
- # define CH8_MIN        1000
+# define CH8_MIN        1000
 #endif
 #ifndef CH8_MAX
- # define CH8_MAX        2000
+# define CH8_MAX        2000
 #endif
 
 
 #ifndef FLAP_1_PERCENT
- # define FLAP_1_PERCENT 0
+# define FLAP_1_PERCENT 0
 #endif
 #ifndef FLAP_1_SPEED
- # define FLAP_1_SPEED 0
+# define FLAP_1_SPEED 0
 #endif
 #ifndef FLAP_2_PERCENT
- # define FLAP_2_PERCENT 0
+# define FLAP_2_PERCENT 0
 #endif
 #ifndef FLAP_2_SPEED
- # define FLAP_2_SPEED 0
+# define FLAP_2_SPEED 0
 #endif
 //////////////////////////////////////////////////////////////////////////////
 // FLIGHT_MODE
 // FLIGHT_MODE_CHANNEL
 //
 #ifndef FLIGHT_MODE_CHANNEL
- # define FLIGHT_MODE_CHANNEL    8
+# define FLIGHT_MODE_CHANNEL    8
 #endif
 #if (FLIGHT_MODE_CHANNEL != 5) && (FLIGHT_MODE_CHANNEL != 6) && (FLIGHT_MODE_CHANNEL != 7) && (FLIGHT_MODE_CHANNEL != 8)
- # error XXX
- # error XXX You must set FLIGHT_MODE_CHANNEL to 5, 6, 7 or 8
- # error XXX
+# error XXX
+# error XXX You must set FLIGHT_MODE_CHANNEL to 5, 6, 7 or 8
+# error XXX
 #endif
 
 #if !defined(FLIGHT_MODE_1)
- # define FLIGHT_MODE_1                  RTL
+# define FLIGHT_MODE_1                  RTL
 #endif
 #if !defined(FLIGHT_MODE_2)
- # define FLIGHT_MODE_2                  RTL
+# define FLIGHT_MODE_2                  RTL
 #endif
 #if !defined(FLIGHT_MODE_3)
- # define FLIGHT_MODE_3                  FLY_BY_WIRE_A
+# define FLIGHT_MODE_3                  FLY_BY_WIRE_A
 #endif
 #if !defined(FLIGHT_MODE_4)
- # define FLIGHT_MODE_4                  FLY_BY_WIRE_A
+# define FLIGHT_MODE_4                  FLY_BY_WIRE_A
 #endif
 #if !defined(FLIGHT_MODE_5)
- # define FLIGHT_MODE_5                  MANUAL
+# define FLIGHT_MODE_5                  MANUAL
 #endif
 #if !defined(FLIGHT_MODE_6)
- # define FLIGHT_MODE_6                  MANUAL
+# define FLIGHT_MODE_6                  MANUAL
 #endif
 
 
@@ -158,7 +158,7 @@
 // AUTO_TRIM
 //
 #ifndef AUTO_TRIM
- # define AUTO_TRIM                              DISABLED
+# define AUTO_TRIM                              DISABLED
 #endif
 
 
@@ -173,27 +173,27 @@
 // GROUND_START_DELAY
 //
 #ifndef GROUND_START_DELAY
- # define GROUND_START_DELAY             0
+# define GROUND_START_DELAY             0
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
 // ENABLE ELEVON_MIXING
 //
 #ifndef ELEVON_MIXING
- # define ELEVON_MIXING          DISABLED
+# define ELEVON_MIXING          DISABLED
 #endif
 #ifndef ELEVON_REVERSE
- # define ELEVON_REVERSE     DISABLED
+# define ELEVON_REVERSE     DISABLED
 #endif
 #ifndef ELEVON_CH1_REVERSE
- # define ELEVON_CH1_REVERSE     DISABLED
+# define ELEVON_CH1_REVERSE     DISABLED
 #endif
 #ifndef ELEVON_CH2_REVERSE
- # define ELEVON_CH2_REVERSE     DISABLED
+# define ELEVON_CH2_REVERSE     DISABLED
 #endif
 
 #ifndef DSPOILR_RUD_RATE_DEFAULT
- #define DSPOILR_RUD_RATE_DEFAULT 100
+#define DSPOILR_RUD_RATE_DEFAULT 100
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
@@ -201,7 +201,7 @@
 //
 // uses 1182 bytes of memory
 #ifndef CAMERA
- # define CAMERA         ENABLED
+# define CAMERA         ENABLED
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
@@ -222,7 +222,7 @@
 // Altitude measurement and control.
 //
 #ifndef ALTITUDE_MIX
- # define ALTITUDE_MIX                   1
+# define ALTITUDE_MIX                   1
 #endif
 
 
@@ -230,7 +230,7 @@
 // AIRSPEED_CRUISE
 //
 #ifndef AIRSPEED_CRUISE
- # define AIRSPEED_CRUISE                12 // 12 m/s
+# define AIRSPEED_CRUISE                12 // 12 m/s
 #endif
 #define AIRSPEED_CRUISE_CM AIRSPEED_CRUISE*100
 
@@ -239,7 +239,7 @@
 // MIN_GNDSPEED
 //
 #ifndef MIN_GNDSPEED
- # define MIN_GNDSPEED                   0 // m/s (0 disables)
+# define MIN_GNDSPEED                   0 // m/s (0 disables)
 #endif
 #define MIN_GNDSPEED_CM MIN_GNDSPEED*100
 
@@ -248,14 +248,14 @@
 // FLY_BY_WIRE_B airspeed control
 //
 #ifndef AIRSPEED_FBW_MIN
- # define AIRSPEED_FBW_MIN               9
+# define AIRSPEED_FBW_MIN               9
 #endif
 #ifndef AIRSPEED_FBW_MAX
- # define AIRSPEED_FBW_MAX               22
+# define AIRSPEED_FBW_MAX               22
 #endif
 
 #ifndef ALT_HOLD_FBW
- # define ALT_HOLD_FBW 0
+# define ALT_HOLD_FBW 0
 #endif
 #define ALT_HOLD_FBW_CM ALT_HOLD_FBW*100
 
@@ -264,33 +264,33 @@
 // Servo Mapping
 //
 #ifndef THROTTLE_MIN
- # define THROTTLE_MIN                   0 // percent
+# define THROTTLE_MIN                   0 // percent
 #endif
 #ifndef THROTTLE_CRUISE
- # define THROTTLE_CRUISE                45
+# define THROTTLE_CRUISE                45
 #endif
 #ifndef THROTTLE_MAX
- # define THROTTLE_MAX                   100
+# define THROTTLE_MAX                   100
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
 // Autopilot control limits
 //
 #ifndef HEAD_MAX
- # define HEAD_MAX                               45
+# define HEAD_MAX                               45
 #endif
 #ifndef PITCH_MAX
- # define PITCH_MAX                              20
+# define PITCH_MAX                              20
 #endif
 #ifndef PITCH_MIN
- # define PITCH_MIN                              -25
+# define PITCH_MIN                              -25
 #endif
 #define HEAD_MAX_CENTIDEGREE HEAD_MAX * 100
 #define PITCH_MAX_CENTIDEGREE PITCH_MAX * 100
 #define PITCH_MIN_CENTIDEGREE PITCH_MIN * 100
 
 #ifndef RUDDER_MIX
- # define RUDDER_MIX           0.5f
+# define RUDDER_MIX           0.5f
 #endif
 
 
@@ -305,7 +305,7 @@
 //
 
 #ifndef LOGGING_ENABLED
- # define LOGGING_ENABLED                ENABLED
+# define LOGGING_ENABLED                ENABLED
 #endif
 
 #define DEFAULT_LOG_BITMASK   0xffff
@@ -315,28 +315,28 @@
 // Navigation defaults
 //
 #ifndef WP_RADIUS_DEFAULT
- # define WP_RADIUS_DEFAULT              90
+# define WP_RADIUS_DEFAULT              90
 #endif
 
 #ifndef LOITER_RADIUS_DEFAULT
- # define LOITER_RADIUS_DEFAULT 60
+# define LOITER_RADIUS_DEFAULT 60
 #endif
 
 #ifndef ALT_HOLD_HOME
- # define ALT_HOLD_HOME 100
+# define ALT_HOLD_HOME 100
 #endif
 #define ALT_HOLD_HOME_CM ALT_HOLD_HOME*100
 
 #ifndef USE_CURRENT_ALT
- # define USE_CURRENT_ALT FALSE
+# define USE_CURRENT_ALT FALSE
 #endif
 
 #ifndef INVERTED_FLIGHT_PWM
- # define INVERTED_FLIGHT_PWM 1750
+# define INVERTED_FLIGHT_PWM 1750
 #endif
 
 #ifndef PX4IO_OVERRIDE_PWM
- # define PX4IO_OVERRIDE_PWM 1750
+# define PX4IO_OVERRIDE_PWM 1750
 #endif
 
 //////////////////////////////////////////////////////////////////////////////
@@ -344,7 +344,7 @@
 //
 
 #ifndef SCALING_SPEED
- # define SCALING_SPEED          15.0
+# define SCALING_SPEED          15.0
 #endif
 
 // use this to completely disable the CLI. We now default the CLI to
@@ -355,18 +355,18 @@
 
 // use this to disable geo-fencing
 #ifndef GEOFENCE_ENABLED
- # define GEOFENCE_ENABLED ENABLED
+# define GEOFENCE_ENABLED ENABLED
 #endif
 
 // pwm value on FENCE_CHANNEL to use to enable fenced mode
 #ifndef FENCE_ENABLE_PWM
- # define FENCE_ENABLE_PWM 1750
+# define FENCE_ENABLE_PWM 1750
 #endif
 
 // a digital pin to set high when the geo-fence triggers. Defaults
 // to -1, which means don't activate a pin
 #ifndef FENCE_TRIGGERED_PIN
- # define FENCE_TRIGGERED_PIN -1
+# define FENCE_TRIGGERED_PIN -1
 #endif
 
 // if RESET_SWITCH_CH is not zero, then this is the PWM value on
@@ -374,7 +374,7 @@
 // position (to for example return to switched mode after failsafe or
 // fence breach)
 #ifndef RESET_SWITCH_CHAN_PWM
- # define RESET_SWITCH_CHAN_PWM 1750
+# define RESET_SWITCH_CHAN_PWM 1750
 #endif
 
 #define HIL_SUPPORT ENABLED
@@ -391,3 +391,8 @@
 # define HAVE_PX4_MIXER 0
 #endif
 
+//UWAFSL START
+#ifndef KP_PHI
+# define KP_PHI  0.6
+#endif
+//UWAFSL END

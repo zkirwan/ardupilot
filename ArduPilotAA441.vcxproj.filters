@@ -178,4 +178,9 @@
       <Filter>ArduPlane</Filter>
     </Text>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\..\Users\Zach\Documents\AA 441 Wing Leveler\ParameterMetaDataBackup.xml">
+      <Filter>ArduPlane</Filter>
+    </Xml>
+  </ItemGroup>
 </Project>
